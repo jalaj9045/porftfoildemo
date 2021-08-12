@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stick-nav</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="D:/stickynavbar/typed.min.js"></script>
+</head>
+<body>
+ 
+    <header id="head">
+        <div class="cover-it">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars "></i>
+            </label>
+            <label class="logo">Jalaj Sharma</label>
+            <ul>
+                <li><a class="active" href="#head">Home</a> </li>
+                <li><a href="#About">About</a> </li>
+                <li><a href="#myskill">My-Skills</a> </li>
+                <li><a href="#Services">Services</a> </li>
+                <li><a href="#Comment">Contact</a> </li>
+                <li> <a href="https://www.youtube.com/channel/UCt-nMICrjPV1udXHMLrLQXw" target="_blank">Subscribe</a></li>
+            </ul>
+        </nav>
+        <div class="text">
+            <p>Hey I am <span id="animate" style="color: orangered;"></span> </p>
+            <h2>Jalaj Sharma</h2>
+            <p id="Longpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quaerat laborum quis sequi at quibusdam, maiores quo reprehenderit sit, optio sapiente dignissimos .</p>
+            <button class="text-btn">Read-More</button>
+        </div>
+   </div>
+    </header>
+    <div class="heading" id="about-heading">
+        <h1>About</h1>
+    </div>
+        <section id="About">
+            <div class="left-side">
+                <img src="k.jpeg" alt="">
+            </div>
+            <div class="right-side">
+                <h2>About me</h2>
+                <p>Hey I am <span id="ani2" style="color: orangered; font-weight: 500;"></span> </p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus hic, impedit vitae maxime illum ea nobis non sed consectetur, tempore placeat saepe? Natus officiis possimus laborum saepe dolorum soluta, ut quos est, enim, ea repellendus.
+                </p>   <button class="text-btn">Read-More</button>
+            </div>
+        </section>
+        <div class="heading">
+            <h1>MY-SKILLS</h1>
+        </div>
+        <section id="myskill">
+         <div class="skills">
+             <h2>My Skills</h2>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis non pariatur amet corporis laudantium fugiat. Molestias earum quaerat deleniti officia facilis modi rem optio consequuntur! Vel inventore quos, iure dolore obcaecati doloremque soluta maxime maiores!</p>
+             <!-- <Button class="rightsidebtn" id="skill-btn"> <a href="#" class="rightsidelink" >About-More</a></Button> -->
+             <button class="text-btn">Read-More</button>
+         </div>
+         <!-- <div class="right-container">
+            <div class="cont1">
+                
+            </div> -->
+        </section>
+
+        <div class="heading">
+            <h1>Services</h1>
+        </div>
+            <!-- section for commentsection -->
+            <section id="Services">
+                <div class="service-box">
+                <div class="service-row">
+                    <img src="b.jpeg" alt="">
+                    <h2>Web development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur quibusdam architecto veniam iste nisi molestias esse qui, sit earum nesciunt omnis doloribus dolor alias.</p>
+                </div>
+    
+                <div class="service-row">
+                    <img src="c.jpg" alt="">
+                    <h2>Web designing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur quibusdam architecto veniam iste nisi molestias esse qui, sit earum nesciunt omnis doloribus dolor alias.</p>
+                </div>
+    
+                <div class="service-row">
+                    <img src="d.jpg" alt="">
+                    <h2>Android development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur quibusdam architecto veniam iste nisi molestias esse qui, sit earum nesciunt omnis doloribus dolor alias.</p>
+                </div>
+                </div>
+            </section>
+
+        <div class="heading">
+            <h1>Comment</h1>
+        </div>
+            <!-- section for commentingdiv -->
+            <section id="Comment">
+                <div class="boy">
+                    <img src="portfolioimg/b3.png" alt="">
+                </div>
+                <div class="Comment-form">
+                    <form>
+                   <input type="text" placeholder="Name"><br>
+                    <input type="email" placeholder="E-mail">
+                    <br>
+                    <textarea cols="40" rows="5"  placeholder="Write Comment"></textarea><br>
+                    <button class="text-btn comment-btn">Read-More</button>
+                </form>
+                </div>
+            </section>
+
+
+            <footer>
+                <span>© Copyright JALAJ SHARMA. All Rights Reserved Designed by Me</span>
+            </footer>
+
+
+            <script>
+                const animated= new Typed('#animate',{
+                    strings:["Frontend Developer", "web desizner", "Youtuber"],
+                    typeSpeed:100,
+                    backSpeed:100,
+                    loop:true,
+                })
+            </script>
+
+<script>
+    const animation= new Typed('#ani2',{
+        strings:["Frontend Developer", "web desizner", "Youtuber"],
+        typeSpeed:100,
+        backSpeed:100,
+        loop:true,
+    })
+</script>
+</body>
+</html>
